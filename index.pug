@@ -1,0 +1,10 @@
+table
+  tbody(id='tbdy')
+    - var y = 0
+    while y++ < 10
+      tr
+        - var x = 0
+        while x++ < 10
+          td
+            button(onmouseup=`cf(${x - 1}, ${y - 1})`) 🟦
+div(id="sb") 00 : 00.0
