@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Minesweeper </title>
+  <link rel="stylesheet" href="./styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<table>
+  <tbody id="tbdy">
+    <tr>
+      <td>
+        <button onmouseup="cf(0, 0)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(1, 0)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(2, 0)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(3, 0)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(4, 0)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(5, 0)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(6, 0)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(7, 0)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(8, 0)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(9, 0)">🟦</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button onmouseup="cf(0, 1)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(1, 1)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(2, 1)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(3, 1)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(4, 1)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(5, 1)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(6, 1)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(7, 1)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(8, 1)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(9, 1)">🟦</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button onmouseup="cf(0, 2)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(1, 2)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(2, 2)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(3, 2)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(4, 2)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(5, 2)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(6, 2)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(7, 2)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(8, 2)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(9, 2)">🟦</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button onmouseup="cf(0, 3)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(1, 3)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(2, 3)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(3, 3)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(4, 3)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(5, 3)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(6, 3)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(7, 3)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(8, 3)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(9, 3)">🟦</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button onmouseup="cf(0, 4)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(1, 4)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(2, 4)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(3, 4)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(4, 4)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(5, 4)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(6, 4)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(7, 4)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(8, 4)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(9, 4)">🟦</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button onmouseup="cf(0, 5)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(1, 5)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(2, 5)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(3, 5)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(4, 5)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(5, 5)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(6, 5)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(7, 5)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(8, 5)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(9, 5)">🟦</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button onmouseup="cf(0, 6)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(1, 6)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(2, 6)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(3, 6)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(4, 6)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(5, 6)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(6, 6)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(7, 6)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(8, 6)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(9, 6)">🟦</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button onmouseup="cf(0, 7)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(1, 7)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(2, 7)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(3, 7)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(4, 7)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(5, 7)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(6, 7)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(7, 7)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(8, 7)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(9, 7)">🟦</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button onmouseup="cf(0, 8)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(1, 8)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(2, 8)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(3, 8)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(4, 8)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(5, 8)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(6, 8)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(7, 8)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(8, 8)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(9, 8)">🟦</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button onmouseup="cf(0, 9)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(1, 9)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(2, 9)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(3, 9)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(4, 9)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(5, 9)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(6, 9)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(7, 9)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(8, 9)">🟦</button>
+      </td>
+      <td>
+        <button onmouseup="cf(9, 9)">🟦</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div id="sb">00 : 00.0</div>
+<!-- partial -->
+  <script  src="./game.js"></script>
+
+</body>
+</html>
